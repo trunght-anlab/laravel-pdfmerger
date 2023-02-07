@@ -143,6 +143,16 @@ class PDFMerger {
     }
 
     /**
+     * Set the title for the final PDF
+     * @param string $title
+     * @return self
+     */
+    public function setTitle($title) {
+        $this->oFPDI->SetTitle($title);
+        return $this;
+    }
+
+    /**
      * Set the final filename
      * @param string $string
      * @param mixed $pages
