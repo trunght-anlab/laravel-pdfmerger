@@ -148,7 +148,7 @@ class PDFMerger {
      * @return self
      */
     public function setTitle($title) {
-        $this->oFPDI->SetTitle($title);
+        $this->oFPDI->SetTitle($title, /*isUTF8=*/true);
         return $this;
     }
 
